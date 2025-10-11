@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 
 	cfg "github.com/cometbft/cometbft/config"
-	cmttypes "github.com/cometbft/cometbft/types"
+	"github.com/cometbft/cometbft/crypto/mldsa"
 	"github.com/cosmos/go-bip39"
 	"github.com/spf13/cobra"
 
@@ -192,7 +192,7 @@ func InitCmd(mbm module.BasicManager, defaultNodeHome string) *cobra.Command {
 	cmd.Flags().String(flags.FlagChainID, "", "genesis file chain-id, if left blank will be randomly created")
 	cmd.Flags().String(FlagDefaultBondDenom, "", "genesis file default denomination, if left blank default value is 'stake'")
 	cmd.Flags().Int64(flags.FlagInitHeight, 1, "specify the initial block height at genesis")
-	cmd.Flags().String(FlagConsensusKeyAlgo, ed25519.KeyType, "algorithm to use for the consensus key")
+	cmd.Flags().String(FlagConsensusKeyAlgo, mldsa.KeyType, "algorithm to use for the consensus key")
 
 	return cmd
 }
