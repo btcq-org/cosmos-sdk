@@ -726,8 +726,8 @@ github.com/bits-and-blooms/bitset v1.24.3 h1:Bte86SlO3lwPQqww+7BE9ZuUCKIjfqnG5jt
 github.com/bits-and-blooms/bitset v1.24.3/go.mod h1:7hO7Gc7Pp1vODcmWvKMRA9BNmbv6a/7QIWpPxHddWR8=
 github.com/boombuler/barcode v1.0.0/go.mod h1:paBWMcWSl3LHKBqUq+rly7CNSldXjb2rDl3JlRe0mD8=
 github.com/boombuler/barcode v1.0.1/go.mod h1:paBWMcWSl3LHKBqUq+rly7CNSldXjb2rDl3JlRe0mD8=
-github.com/btcq-org/cometbft v0.0.0-20260119043648-b22bfdaa4213 h1:2kjaXJQRg6fkAgjG3jPDtt+LGYuH3nfHjU9Gz7hY724=
-github.com/btcq-org/cometbft v0.0.0-20260119043648-b22bfdaa4213/go.mod h1:tECeeB+QcH+bkOHRdWvozDIwEvJPgz5b0UsN4FI2jVQ=
+github.com/btcq-org/cometbft v0.0.0-20260119105947-d45bc2da3b42 h1:jaBwcppHXmR18+4xgRrxkrzF8mKqYLtNpX1c9lDjUGY=
+github.com/btcq-org/cometbft v0.0.0-20260119105947-d45bc2da3b42/go.mod h1:tECeeB+QcH+bkOHRdWvozDIwEvJPgz5b0UsN4FI2jVQ=
 github.com/btcsuite/btcd/btcec/v2 v2.3.5 h1:dpAlnAwmT1yIBm3exhT1/8iUSD98RDJM5vqJVQDQLiU=
 github.com/btcsuite/btcd/btcec/v2 v2.3.5/go.mod h1:m22FrOAiuxl/tht9wIqAoGHcbnCCaPWyauO8y2LGGtQ=
 github.com/btcsuite/btcd/btcutil v1.1.6 h1:zFL2+c3Lb9gEgqKNzowKUPQNb8jV7v5Oaodi/AYFd6c=
