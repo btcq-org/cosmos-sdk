@@ -1,4 +1,4 @@
-go 1.23.0
+go 1.23.2
 
 module github.com/cosmos/cosmos-sdk
 
@@ -16,7 +16,7 @@ require (
 	github.com/bgentry/speakeasy v0.2.0
 	github.com/bits-and-blooms/bitset v1.24.3
 	github.com/chzyer/readline v1.5.1
-	github.com/cloudflare/circl v1.6.1
+	github.com/cloudflare/circl v1.6.2
 	github.com/cockroachdb/apd/v2 v2.0.2
 	github.com/cockroachdb/errors v1.12.0
 	github.com/cometbft/cometbft v0.38.22
@@ -54,14 +54,14 @@ require (
 	github.com/spf13/viper v1.21.0
 	github.com/stretchr/testify v1.11.1
 	github.com/tendermint/go-amino v0.16.0
-	golang.org/x/crypto v0.33.0
-	golang.org/x/exp v0.0.0-20240719175910-8a7402abbf56
+	go.uber.org/mock v0.5.2
+	golang.org/x/crypto v0.41.0
 	golang.org/x/sync v0.16.0
-	google.golang.org/genproto/googleapis/api v0.0.0-20241202173237-19429a94021a
-	google.golang.org/grpc v1.70.0
-	google.golang.org/protobuf v1.36.6
-	gotest.tools/v3 v3.5.1
-	pgregory.net/rapid v1.1.0
+	google.golang.org/genproto/googleapis/api v0.0.0-20250707201910-8d1bb00bc6a7
+	google.golang.org/grpc v1.75.0
+	google.golang.org/protobuf v1.36.10
+	gotest.tools/v3 v3.5.2
+	pgregory.net/rapid v1.2.0
 	sigs.k8s.io/yaml v1.4.0
 )
 
@@ -70,7 +70,7 @@ require (
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/99designs/go-keychain v0.0.0-20191008050251-8e49817e8af4 // indirect
 	github.com/DataDog/datadog-go v3.2.0+incompatible // indirect
-	github.com/DataDog/zstd v1.5.5 // indirect
+	github.com/DataDog/zstd v1.5.7 // indirect
 	github.com/Microsoft/go-winio v0.6.2 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bufbuild/protocompile v0.14.1 // indirect
@@ -103,7 +103,7 @@ require (
 	github.com/go-kit/kit v0.13.0 // indirect
 	github.com/go-kit/log v0.2.1 // indirect
 	github.com/go-logfmt/logfmt v0.6.1 // indirect
-	github.com/go-logr/logr v1.4.3 // indirect
+	github.com/go-viper/mapstructure/v2 v2.4.0 // indirect
 	github.com/godbus/dbus v0.0.0-20190726142602-4481cbc300e2 // indirect
 	github.com/gogo/googleapis v1.4.1 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
@@ -159,13 +159,17 @@ require (
 	github.com/zondax/ledger-go v1.0.1 // indirect
 	go.etcd.io/bbolt v1.4.0-alpha.0.0.20240404170359-43604f3112c5 // indirect
 	go.opencensus.io v0.24.0 // indirect
-	golang.org/x/net v0.35.0 // indirect
-	golang.org/x/sys v0.32.0 // indirect
-	golang.org/x/term v0.29.0 // indirect
+	go.uber.org/multierr v1.11.0 // indirect
+	go.uber.org/zap v1.27.0 // indirect
+	go.yaml.in/yaml/v3 v3.0.4 // indirect
+	golang.org/x/arch v0.17.0 // indirect
+	golang.org/x/exp v0.0.0-20250305212735-054e65f0b394 // indirect
+	golang.org/x/net v0.43.0 // indirect
+	golang.org/x/sys v0.35.0 // indirect
+	golang.org/x/term v0.34.0 // indirect
 	golang.org/x/text v0.28.0 // indirect
-	google.golang.org/genproto v0.0.0-20240227224415-6ceb2ff114de // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20241202173237-19429a94021a // indirect
-	gopkg.in/ini.v1 v1.67.0 // indirect
+	google.golang.org/genproto v0.0.0-20250603155806-513f23925822 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250818200422-3122310a409c // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	nhooyr.io/websocket v1.8.6 // indirect
 	rsc.io/qr v0.2.0 // indirect
@@ -195,7 +199,7 @@ replace cosmossdk.io/store => ./store
 
 replace github.com/cosmos/cosmos-sdk => .
 
-replace github.com/cometbft/cometbft => github.com/btcq-org/cometbft v0.0.0-20260119041824-0454cf0ca789
+replace github.com/cometbft/cometbft => github.com/btcq-org/cometbft v0.0.0-20260119043648-b22bfdaa4213
 
 retract (
 	// incorrect tag for patch version
