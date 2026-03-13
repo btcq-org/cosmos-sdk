@@ -199,7 +199,7 @@ replace cosmossdk.io/store => ./store
 
 replace github.com/cosmos/cosmos-sdk => .
 
-replace github.com/cometbft/cometbft => github.com/btcq-org/cometbft v0.0.0-20260119105947-d45bc2da3b42
+replace github.com/cometbft/cometbft => github.com/btcq-org/cometbft v0.0.0-20260313055048-0a43a1ca4e16
 
 retract (
 	// incorrect tag for patch version
