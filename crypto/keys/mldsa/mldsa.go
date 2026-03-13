@@ -33,7 +33,8 @@ func (privKey *PrivKey) Sign(msg []byte) ([]byte, error) {
 	if err != nil {
 		return nil, fmt.Errorf("failed to unmarshal private key: %w", err)
 	}
-	return privateKey.Sign(rand.Reader, msg, crypto.Hash(0))
+	shaMsg := sha256.Sum256(msg)
+	return privateKey.Sign(rand.Reader, shaMsg[:], crypto.Hash(0))
 }
 
 // Bytes returns the byte representation of the Private Key.
@@ -119,7 +120,8 @@ func (m *PubKey) VerifySignature(msg, sig []byte) bool {
 	if err != nil {
 		return false
 	}
-	return scheme.Verify(publicKey, msg, sig, nil)
+	shaMsg := sha256.Sum256(msg)
+	return scheme.Verify(publicKey, shaMsg[:], sig, nil)
 }
 
 func (m *PubKey) Equals(key cryptotypes.PubKey) bool {
