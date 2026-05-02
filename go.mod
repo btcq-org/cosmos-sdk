@@ -146,7 +146,6 @@ require (
 	github.com/rogpeppe/go-internal v1.14.1 // indirect
 	github.com/rs/cors v1.11.1 // indirect
 	github.com/sagikazarmark/locafero v0.11.0 // indirect
-	github.com/sagikazarmark/slog-shim v0.1.0 // indirect
 	github.com/sasha-s/go-deadlock v0.3.9 // indirect
 	github.com/sourcegraph/conc v0.3.1-0.20240121214520-5f936abd7ae8 // indirect
 	github.com/spf13/afero v1.15.0 // indirect
@@ -199,7 +198,7 @@ replace cosmossdk.io/store => ./store
 
 replace github.com/cosmos/cosmos-sdk => .
 
-replace github.com/cometbft/cometbft => github.com/btcq-org/cometbft v0.0.0-20260313055048-0a43a1ca4e16
+replace github.com/cometbft/cometbft => github.com/btcq-org/cometbft v0.0.0-20260502040544-c16030e07020
 
 retract (
 	// incorrect tag for patch version
